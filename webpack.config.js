@@ -3,12 +3,13 @@ const { ModuleFederationPlugin } = require("webpack").container;
 const path = require("path");
 
 module.exports = {
-  mode: "development",
+  mode: "production",
   entry: "./src/index.js",
 
-  // ✅ MOVE IT HERE
   output: {
     publicPath: "auto",
+    filename: "[name].js",
+    clean: true,
   },
 
   devServer: {
