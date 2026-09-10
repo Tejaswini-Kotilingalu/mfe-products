@@ -8,7 +8,7 @@ module.exports = {
 
   // ✅ MOVE IT HERE
   output: {
-    publicPath: "http://localhost:3001/",
+    publicPath: "auto",
   },
 
   devServer: {
